@@ -1,0 +1,23 @@
+<div class="row" >
+  <div class="col s12 m6" >
+    <div class="card lime lighten-5">
+      <div class="card-content green-text text-lighten-1" id="loginWindow">
+        <div>
+          Email: <input type="text" ng-model="account.email">
+        </div>
+
+        <div>
+          Password: <input type="password" ng-model="account.password">
+        </div>
+
+        <div class="loginBtns">
+
+
+          <button class="btn btn-info" ng-click="login()"  id="loginBtn" autofocus="true">Login   <i class="fa fa-sign-in"></i></button>
+          <button class="btn btn-info" ng-click="register()" id="registerBtn">Register   <i class="fa fa-user-plus"></i></button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>

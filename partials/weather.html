@@ -1,0 +1,41 @@
+<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red darken-2">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li><a ng-href="#/scorecards/all" class="btn-floating btn-large purple lighten-3"><i class="fa fa-book"></i></a></li>
+      <li><a ng-href="#/scorecards/new" class="btn-floating btn-large green lighten-2"><i class="fa fa-table"></i></a></li>
+      <li><a ng-href="#/weather/zip" class="btn-floating btn-large indigo lighten-2"><i class="fa fa-cloud"></i></a></li>
+    </ul>
+</div>
+
+
+
+
+  <div class="row" >
+    <div class="container">
+      <div class="col s12 m6" ng-repeat="hour in hourly">
+        <div class="card blue lighten-5" id="weatherCard">
+          <div class="card-content black-text">
+            <div>
+            <div>
+              <img src="{{hour.icon_url}}" height="125" width="125">
+              <h5><i class="fa fa-clock-o" aria-hidden="true"></i>    {{hour.FCTTIME.civil}}</h5>
+            </div>
+            <p></p>
+            <div>
+              <strong><h6>{{hour.condition}}</h6></strong>
+              <p>{{hour.temp.english}} °F</p>
+            </div>
+            <div>
+              <p>Humidity: {{hour.humidity}}%</p>
+              <p>Dew Point: {{hour.dewpoint.english}}</p>
+              <p>Wind Speed: {{hour.wspd.english}} MPH</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

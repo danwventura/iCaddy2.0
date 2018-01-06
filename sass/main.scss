@@ -1,0 +1,301 @@
+//###################### COLORS #####################//
+$mainBtnsIconColor: #fff;
+$mainWeatherBtnColor: #7B8Dc7;
+$mainNewBtnColor: #7bc78f;
+$mainBookBtnColor: #8e7bc7;
+$mainStatBtnColor: #c77b8e;
+
+
+
+
+
+//###################################################//
+//################### GENERAL ######################//
+
+html{
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  
+}
+
+
+body{
+  background-image: url('../img/argyle-pattern-green-white.jpg');
+  width:100%;
+}
+
+
+.btn-info{
+  background-color:#137D4D;
+  font-color: white;
+}
+
+.btn-info:active, .btn-info:hover {
+  background-color:#54B541;
+  font-color: black;
+}
+//##################################################//
+//################### BANNER ######################//
+.nav-wrapper{
+  background-color: #C5C4A8;
+}
+
+#navLogout {
+  padding-left: 28%;
+  padding-right: 28%;
+  font-size: 16px;
+  border-radius:12px;
+  box-shadow: 8px 8px 10px 0px #868587;
+}
+
+#nav-mobile a {
+  margin-right: 40px;
+}
+
+
+//##################################################//
+
+//##################### LOGIN ######################//
+#loginWindow {
+  margin-top: 100px;
+  height: 530px;
+  box-shadow: 8px 8px 10px 0px #05401c;
+}
+
+
+.card-content{
+  text-align:center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.loginBtns button{
+  padding-left: 8px;
+  padding-right:14px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  width: 100%;
+}
+
+.loginBtns{
+  margin-top: 75px;
+}
+
+#loginBtn{
+  width: 75%;
+}
+
+#registerBtn{
+  width: 75%;
+}
+
+
+
+
+
+//#################################################//
+
+
+//################# MAIN VIEW BUTTONS ##################//
+
+
+
+.mainViewBtns{
+  margin-left: 24%;
+  margin-top: 175px;
+
+}
+
+.mainViewBtns1{
+  margin-bottom: 30px;
+}
+
+
+
+
+#weatherBtn{
+  width: 45%;
+  height: 95px;
+  margin-right: 7%;
+  margin-left: -16%;
+  border-radius: 10px;
+  background-color: $mainWeatherBtnColor;
+  box-shadow: 8px 8px 10px 0px #05401c;
+}
+
+#weatherBtn i {
+  color: $mainBtnsIconColor;
+  opacity: 0.65;
+}
+
+#newBtn{
+  width: 45%;
+  height: 95px;
+  margin-left: 0px;
+  border-radius: 10px;
+  background-color: $mainNewBtnColor;
+  box-shadow: 8px 8px 10px 0px #05401c;
+}
+
+#newBtn i {
+  color: $mainBtnsIconColor;
+  opacity: 0.5;
+}
+
+#bookBtn{
+  width: 45%;
+  height: 95px;
+  margin-right: 7%;
+  margin-left: -16%;
+  border-radius: 10px;
+  background-color: $mainBookBtnColor;
+  box-shadow: 8px 8px 10px 0px #05401c;
+}
+
+#bookBtn i {
+  color: $mainBtnsIconColor;
+  opacity: 0.5;
+}
+
+#statsBtn{
+  width: 45%;
+  height: 95px;
+  margin-left: 0px;
+  border-radius: 10px;
+  background-color: $mainStatBtnColor;
+  box-shadow: 8px 8px 10px 0px #05401c;
+}
+
+#statsBtn i{
+  color: $mainBtnsIconColor;
+  opacity: 0.5;
+}
+
+
+
+
+//#############################################//
+
+
+//################# WEATHER ##################//
+#weatherCard {
+  border-radius: 8px;
+
+
+  
+}
+
+#zipCard {
+  margin-top: 100px;
+  border-radius: 8px;
+}
+
+
+
+//###############################################//
+
+//################## SCORECARD #################//
+
+.newRoundData {
+  text-align:center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.newRoundData label {
+  font-size: 20px;
+
+}
+
+
+
+
+.collapsible {
+ text-align:center;
+ width:70%;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #F9FBE7;
+ box-shadow: 8px 8px 10px 0px #05401c;
+
+}
+
+.collapsible-header {
+  font-size: 15px;
+}
+
+.collapsible-body {
+  font-size: 13px;
+}
+
+.newCardBtn{
+  text-align:center;
+}
+
+
+.newFrontTotals {
+  background-color:$mainNewBtnColor;
+}
+
+
+
+.newBackTotals {
+  background-color:$mainWeatherBtnColor;
+}
+
+
+
+.newRoundTotals {
+  background-color:$mainStatBtnColor;
+}
+
+
+// .scorecardListBtns {
+//   text-align: center;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+
+
+// #cardName{
+//   float:left
+// }
+
+//###############################################//
+
+//#################### Scorecard List View #################//
+#allCards {
+  border-radius:10px;
+  box-shadow: 8px 8px 10px 0px #05401c;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+.allRoundsData ul li {
+  display: inline;
+}
+
+// .holeNotes{
+
+// }
+
+
+#cardViewDeleteBtn{
+  
+  text-align: right;
+}
+
+#cardViewEditBtn{
+  text-align: left;
+}
+
+.button{
+  
+}
+//##########################################################//

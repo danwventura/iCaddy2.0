@@ -1,0 +1,159 @@
+<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red darken-2">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li><a ng-href="#/scorecards/all" class="btn-floating btn-large purple lighten-3"><i class="fa fa-book"></i></a></li>
+      <li><a ng-href="#/scorecards/new" class="btn-floating btn-large green lighten-2"><i class="fa fa-table"></i></a></li>
+      <li><a ng-href="#/weather/zip" class="btn-floating btn-large indigo lighten-2"><i class="fa fa-cloud"></i></a></li>
+    </ul>
+</div>
+
+<ul class="collapsible" data-collapsible="accordion" watch>
+  <h4>{{title}}</h4>
+    
+  <div class="newRoundData">
+    <label>Round Date:</label>
+    <input type="text" ng-model="updatedCard.roundDate"/>
+
+    <label>Course Name:</label>
+    <input type="text" ng-model="updatedCard.roundCourse"/>
+    
+    
+  </div>
+
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole One</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeOneScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeOneFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeOnePutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeOneNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Two</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeTwoScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeTwoFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeTwoPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeTwoNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Three</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeThreeScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeThreeFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeThreePutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeThreeNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Four</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeFourScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeFourFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeFourPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeFourNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Five</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeFiveScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeFiveFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeFivePutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeFiveNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Six</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeSixScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeSixFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeSixPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeSixNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Seven</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeSevenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeSevenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeSevenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeSevenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Eight</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeEightScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeEightFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeEightPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeEightNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Nine</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeNineScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeNineFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeNinePutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeNineNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Ten</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeTenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeTenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeTenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeTenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Eleven</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeElevenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeElevenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeElevenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeElevenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Twelve</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeTwelveScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeTwelveFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeTwelvePutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeTwelveNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Thirteen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeThirteenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeThirteenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeThirteenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeThirteenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Fourteen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeFourteenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeFourteenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeFourteenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeFourteenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Fifteen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeFifteenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeFifteenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeFifteenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeFifteenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Sixteen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeSixteenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeSixteenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeSixteenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeSixteenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Seventeen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeSeventeenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeSeventeenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeSeventeenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeSeventeenNotes"></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons"></i>Hole Eighteen</div>
+    <div class="collapsible-body">Score:<input type="text" ng-model="updatedCard.holeEighteenScore"></div>
+    <div class="collapsible-body">Fairway: <input type="text" ng-model="updatedCard.holeEighteenFairway"></div>
+    <div class="collapsible-body">Putts: <input type="text" ng-model="updatedCard.holeEighteenPutts"></div>
+    <div class="collapsible-body">Notes: <input type="text" ng-model="updatedCard.holeEighteenNotes"></div>
+  </li>
+   <li>
+    <div class="collapsible-header"><p>{{totalScore}}</p></div>
+  </li>
+  <div id="updateCardBtn" class="button">
+    <button class="btn btn-info" ng-click="addUpdatedCard()">Update Round</button>
+  </div>
+</ul>
+
+

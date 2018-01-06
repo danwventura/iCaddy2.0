@@ -1,0 +1,37 @@
+<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red darken-2">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li><a ng-href="#/scorecards/all" class="btn-floating btn-large purple lighten-3"><i class="fa fa-book"></i></a></li>
+      <li><a ng-href="#/scorecards/new" class="btn-floating btn-large green lighten-2"><i class="fa fa-table"></i></a></li>
+      <li><a ng-href="#/weather/zip" class="btn-floating btn-large indigo lighten-2"><i class="fa fa-cloud"></i></a></li>
+    </ul>
+</div>
+
+
+
+
+<div>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card indigo lighten-1" id="zipCard">
+        <div class="card-content white-text">
+          <i class="fa fa-cloud fa-4x"></i>
+          <h4>Weather Check</h4>
+          <input type="text" name="zip code" placeholder="Enter Zip Code" value="37206" ng-model="zipCode">
+          <button class="btn btn-info" ng-click="getWeather(zipCode)"><i class="fa fa-bolt" aria-hidden="true"></i>   Check   <i class="fa fa-bolt" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div ng-include="'./partials/weather.html'">
+    
+
+
+  </div>
+
+
+
+</div>

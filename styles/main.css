@@ -1,0 +1,168 @@
+html {
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+body {
+  background-image: url("../img/argyle-pattern-green-white.jpg");
+  width: 100%; }
+
+.btn-info {
+  background-color: #137D4D;
+  font-color: white; }
+
+.btn-info:active, .btn-info:hover {
+  background-color: #54B541;
+  font-color: black; }
+
+.nav-wrapper {
+  background-color: #C5C4A8; }
+
+#navLogout {
+  padding-left: 28%;
+  padding-right: 28%;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 10px 0px #868587; }
+
+#nav-mobile a {
+  margin-right: 40px; }
+
+#loginWindow {
+  margin-top: 100px;
+  height: 530px;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+.card-content {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.loginBtns button {
+  padding-left: 8px;
+  padding-right: 14px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  width: 100%; }
+
+.loginBtns {
+  margin-top: 75px; }
+
+#loginBtn {
+  width: 75%; }
+
+#registerBtn {
+  width: 75%; }
+
+.mainViewBtns {
+  margin-left: 24%;
+  margin-top: 175px; }
+
+.mainViewBtns1 {
+  margin-bottom: 30px; }
+
+#weatherBtn {
+  width: 45%;
+  height: 95px;
+  margin-right: 7%;
+  margin-left: -16%;
+  border-radius: 10px;
+  background-color: #7B8Dc7;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+#weatherBtn i {
+  color: #fff;
+  opacity: 0.65; }
+
+#newBtn {
+  width: 45%;
+  height: 95px;
+  margin-left: 0px;
+  border-radius: 10px;
+  background-color: #7bc78f;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+#newBtn i {
+  color: #fff;
+  opacity: 0.5; }
+
+#bookBtn {
+  width: 45%;
+  height: 95px;
+  margin-right: 7%;
+  margin-left: -16%;
+  border-radius: 10px;
+  background-color: #8e7bc7;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+#bookBtn i {
+  color: #fff;
+  opacity: 0.5; }
+
+#statsBtn {
+  width: 45%;
+  height: 95px;
+  margin-left: 0px;
+  border-radius: 10px;
+  background-color: #c77b8e;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+#statsBtn i {
+  color: #fff;
+  opacity: 0.5; }
+
+#weatherCard {
+  border-radius: 8px; }
+
+#zipCard {
+  margin-top: 100px;
+  border-radius: 8px; }
+
+.newRoundData {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+
+.newRoundData label {
+  font-size: 20px; }
+
+.collapsible {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F9FBE7;
+  box-shadow: 8px 8px 10px 0px #05401c; }
+
+.collapsible-header {
+  font-size: 15px; }
+
+.collapsible-body {
+  font-size: 13px; }
+
+.newCardBtn {
+  text-align: center; }
+
+.newFrontTotals {
+  background-color: #7bc78f; }
+
+.newBackTotals {
+  background-color: #7B8Dc7; }
+
+.newRoundTotals {
+  background-color: #c77b8e; }
+
+#allCards {
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px 0px #05401c;
+  margin-right: auto;
+  margin-left: auto; }
+
+.allRoundsData ul li {
+  display: inline; }
+
+#cardViewDeleteBtn {
+  text-align: right; }
+
+#cardViewEditBtn {
+  text-align: left; }

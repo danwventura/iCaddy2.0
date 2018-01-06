@@ -1,0 +1,252 @@
+    
+
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red darken-2">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul>
+          <li><a ng-href="#/scorecards/all" class="btn-floating btn-large purple lighten-3"><i class="fa fa-book"></i></a></li>
+          <li><a ng-href="#/scorecards/new" class="btn-floating btn-large green lighten-2"><i class="fa fa-table"></i></a></li>
+          <li><a ng-href="#/weather/zip" class="btn-floating btn-large indigo lighten-2"><i class="fa fa-cloud"></i></a></li>
+        </ul>
+    </div>
+    
+
+  <!-- <div id="roundReturned"> -->
+    <div class="newRoundData">
+      <div class="row">
+        <div class="col s12 s6">
+          <div class="card grey darken-1">
+            <div class="card-content white-text">
+              <h5>{{selectedCard.roundCourse}}</h5>
+              <h5>{{selectedCard.roundDate}}</h5>
+          
+              <div><h5>Round Score:  <strong>{{selectedCard.totalScore}}</strong></h5></div>      
+              <div><h6>Front Score:  <strong>{{selectedCard.frontScore}}</strong></h6></div>
+              <div><h6>Back Score:  <strong>{{selectedCard.backScore}}</strong></h6></div>
+              <div><h6>Round Handicap:  <strong>{{selectedCard.roundHandicap}}</strong></h6></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+        <div class="row">
+          <div class="col s12 s6">
+            <div class="card lime lighten-5" id="allCards">
+              <div class="card-content dark-grey-text">
+                <table class="striped">
+                  <thead>
+                    <h5>Front Nine</h5>
+                    <tr>
+                       <th data-field="hole"><i class="fa fa-flag-checkered" aria-hidden="true"> Hole</i></th>
+                       <th data-field="note"><i class="fa fa-pencil-square-o" aria-hidden="true"> Score</i></th>
+                       <th data-field="fairway"><i class="fa fa-bullseye" aria-hidden="true"> Fairway</i></th>
+                       <th data-field="putts"><i class="fa fa-crosshairs"> Putts</i></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>#1</td>
+                      <td>{{selectedCard.holeOneScore}}</td>
+                      <td>{{selectedCard.holeOneFairway}}</td>
+                      <td>{{selectedCard.holeOnePutts}}</td>
+                    </tr>
+                  
+                    <tr>
+                      <td>#2</td>
+                      <td>{{selectedCard.holeTwoScore}}</td>
+                      <td>{{selectedCard.holeTwoFairway}}</td>
+                      <td>{{selectedCard.holeTwoPutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#3</td>
+                      <td>{{selectedCard.holeThreeScore}}</td>
+                      <td>{{selectedCard.holeThreeFairway}}</td>
+                      <td>{{selectedCard.holeThreePutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#4</td>
+                      <td>{{selectedCard.holeFourScore}}</td>
+                      <td>{{selectedCard.holeFourFairway}}</td>
+                      <td>{{selectedCard.holeFourPutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#5</td>
+                      <td>{{selectedCard.holeFiveScore}}</td>
+                      <td>{{selectedCard.holeFiveFairway}}</td>
+                      <td>{{selectedCard.holeFivePutts}}</td>
+                    </tr>
+                      
+                    <tr>
+                      <td>#6</td>
+                      <td>{{selectedCard.holeSixScore}}</td>
+                      <td>{{selectedCard.holeSixFairway}}</td>
+                      <td>{{selectedCard.holeSixPutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#7</td>
+                      <td>{{selectedCard.holeSevenScore}}</td>
+                      <td>{{selectedCard.holeSevenFairway}}</td>
+                      <td>{{selectedCard.holeSevenPutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#8</td>
+                      <td>{{selectedCard.holeEightScore}}</td>
+                      <td>{{selectedCard.holeEightFairway}}</td>
+                      <td>{{selectedCard.holeEightPutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>#9</td>
+                      <td>{{selectedCard.holeNineScore}}</td>
+                      <td>{{selectedCard.holeNineFairway}}</td>
+                      <td>{{selectedCard.holeNinePutts}}</td>
+                    </tr>
+                    
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Front:</td>
+                      <td>{{selectedCard.frontStrokes}}</td>
+                      <td>{{selectedCard.frontFairways}}</td>
+                      <td>{{selectedCard.frontPutts}}</td>
+                    </tr>
+                   
+
+
+                 </tbody>
+               </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+               <div class="row">
+                <div class="col s12 s6">
+                  <div class="card lime lighten-5" id="allCards">
+                    <div class="card-content dark-grey-text">
+                      <table class="striped">
+                        <thead>
+                          <h5>Back Nine</h5>
+                          <tr>
+                             <th data-field="hole"><i class="fa fa-flag-checkered" aria-hidden="true"> Hole</i></th>
+                             <th data-field="note"><i class="fa fa-pencil-square-o" aria-hidden="true"> Score</i></th>
+                             <th data-field="fairway"><i class="fa fa-bullseye" aria-hidden="true"> Fairway</i></th>
+                             <th data-field="putts"><i class="fa fa-crosshairs"> Putts</i></th>
+                          </tr>
+                        </thead>
+                          <tbody>
+                            <tr>
+                              <td>#10</td>
+                              <td>{{selectedCard.holeTenScore}}</td>
+                              <td>{{selectedCard.holeTenFairway}}</td>
+                              <td>{{selectedCard.holeTenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#11</td>
+                              <td>{{selectedCard.holeElevenScore}}</td>
+                              <td>{{selectedCard.holeElevenFairway}}</td>
+                              <td>{{selectedCard.holeElevenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#12</td>
+                              <td>{{selectedCard.holeTwelveScore}}</td>
+                              <td>{{selectedCard.holeTwelveFairway}}</td>
+                              <td>{{selectedCard.holeTwelvePutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#13</td>
+                              <td>{{selectedCard.holeThirteenScore}}</td>
+                              <td>{{selectedCard.holeThirteenFairway}}</td>
+                              <td>{{selectedCard.holeThirteenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#14</td>
+                              <td>{{selectedCard.holeFourteenScore}}</td>
+                              <td>{{selectedCard.holeFourteenFairway}}</td>
+                              <td>{{selectedCard.holeFourteenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#15</td>
+                              <td>{{selectedCard.holeFifteenScore}}</td>
+                              <td>{{selectedCard.holeFifteenFairway}}</td>
+                              <td>{{selectedCard.holeFifteenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#16</td>
+                              <td>{{selectedCard.holeSixteenScore}}</td>
+                              <td>{{selectedCard.holeSixteenFairway}}</td>
+                              <td>{{selectedCard.holeSixteenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#17</td>
+                              <td>{{selectedCard.holeSeventeenScore}}</td>
+                              <td>{{selectedCard.holeSeventeenFairway}}</td>
+                              <td>{{selectedCard.holeSeventeenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>#18</td>
+                              <td>{{selectedCard.holeEighteenScore}}</td>
+                              <td>{{selectedCard.holeEighteenFairway}}</td>
+                              <td>{{selectedCard.holeEighteenPutts}}</td>
+                            </tr>
+                            
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            
+                            <tr>
+                              <td>Back:</td>
+                              <td>{{selectedCard.backStrokes}}</td>
+                              <td>{{selectedCard.backFairways}}</td>
+                              <td>{{selectedCard.backPutts}}</td>
+                            </tr>
+                    
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            
+                            <tr>
+                              <td>Totals:</td>
+                              <td>{{selectedCard.totalScore}}</td>
+                              <td>{{selectedCard.totalFairways}}</td>
+                              <td>{{selectedCard.totalPutts}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="cardViewBtns" >
+                          <a ng-href="#/scorecards/{{selectedCardId}}/edit" class="btn btn-info">Edit</a>
+                          <button class="btn btn-info" ng-click="deleteSingleScorecard()">Delete</button>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  <!-- </div> -->
